@@ -1,9 +1,9 @@
 var numberOfHovers = document.querySelectorAll(".hvrs").length;
 
-function makeSound(key) 
+function makeSound(key)
 {
 
-  switch (key) 
+  switch (key)
   {
     case "v":
       var vocis = new Audio("audio/vocis.mp3");
@@ -23,14 +23,9 @@ function makeSound(key)
   }
 }
 
-document.addEventListener("keypress", function(event) 
+document.addEventListener("keypress", function(event)
 {
   makeSound(event.key);
 });
 
-
-
-
-
-
-
+Waves.attach('.float-button-light', ['waves-button', 'waves-float', 'waves-light']);
