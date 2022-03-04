@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Invitation to Bor's 50!</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="bg-image">
+
+    <form action="index.html" method="post">
+      <div class="title">
+        <h1>It's Borsday!</h1>
+      </div>
+    <div class="center-text">
+      <h2>the date: 12. 03. 2022, the time: 17:00, the place: Nana, Main square</h2><br>
+      <div class="buttons">
+        <label for="name">Your name:</label>
+        <input id="f1" type="text" name="yourname" required><br>
+        <input class="btn btn-outline-light btn-lg" name="gogo" type="submit" value="Hell yeah!" />
+        <input class="btn btn-outline-light btn-lg" name="gogo" type="submit" value="Sorry, can't come" />
+      </div>
+    </div>
+    </form>
+
+    <?php include "save.php"; ?>
+    <script>
+    pass="<?php echo $r1; ?>";
+    @if (pass!="") document.getElementById("f1").value=pass;
+    ini_set('display_errors', 0);
+    </script>
+
+    <p>&#169; Natalija Greiner</p>
+
+  </body>
+</html>

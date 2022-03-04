@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+
+body {
+  text-align: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 10em;
+  color: white;
+  text-shadow: -2px -2px 0 #008B8B, 2px -2px 0 #008B8B, -2px 2px 0 #008B8B, 2px 2px 0 #008B8B;
+  font-family: 'Rowdies', cursive;
+}
+
+h2 {
+  color: white;
+  font-family: 'Rowdies', cursive;
+  font-size: 2.3em;
+}
+
+h3 {
+  color: white;
+  font-family: 'Rowdies', cursive;
+  font-size: 2.3em;
+  padding-top: 200px;
+}
+
+p {
+  padding-top: 60px;
+  color: #778899;
+}
+
+label {
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Rowdies', cursive;
+}
+
+input {
+  text-align: center;
+}
+
+.bg-image {
+background-image: url("images/kaseta.jpg");
+background-size: 100%;
+
+}
+
+.title {
+  padding-top: 100px;
+}
+
+.center-text {
+  padding-top: 350px;
+  letter-spacing: 2px;
+}
+
+.buttons {
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .bg-image {
+    background-repeat: repeat-y;
+  }
+
+  .title {
+    padding-top: 200px;
+  }
+
+  .center-text {
+    padding-top: 100px;
+  }
+
+  .buttons {
+    padding-top: 50px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+
+  h2, h3 {
+    font-size: 1em;
+  }
+
+
+}
